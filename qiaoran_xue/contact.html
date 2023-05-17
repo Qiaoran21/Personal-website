@@ -1,0 +1,89 @@
+<!--------w-----------
+
+    Date: 2023-04-18
+    Description: A portfolio website - Contact page. 
+
+--------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QIAORAN - CONTACT</title>
+    <link rel="icon" type="image/icon" href="/favicon-32x32.png">
+    <link rel="stylesheet" href="project4.css">
+    <script src="formValidate.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="heading">
+                <h1>Qiaoran Xue</h1>
+            </div>
+            
+            <nav id="topNav" title="topNav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">MORE ABOUT ME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="myContact">
+                <h1>let's connect!</h1>
+            </div>
+            
+            <div id="contactForm">
+                <form id="contactInfo" action="thankYou.html" method="get">
+                    <ul>
+                        <li>
+                            <label for="name">name</label>
+                            <p class="error" id="name_error">(name is required)</p>
+                            <input type="text" id="name" name="name">
+                        </li>
+                        <li>
+                            <label for="phone">phone number</label>
+                            <p class="error" id="phone_error">(valid phone number is required)</p>
+                            <input type="number" id="phone" name="phone">
+                        </li>
+                        <li>
+                            <label for="email">email</label>
+                            <p class="error" id="email_error">(valid email is required)</p>
+                            <input type="text" id="email" name="email">
+                        </li>
+                        <li>
+                            <label for="subject">subject</label>
+                            <p class="error" id="subject_error">(subject is required)</p>
+                            <input type="text" id="subject" name="subject">
+                        </li>
+                        <li>                            
+                            <label for="message">message</label>
+                            <textarea name="message" id="message" cols="80" rows="8"></textarea>
+                        </li>
+                        
+                        <li>
+                            <button type="submit">submit</button>
+                            <button type="reset">reset</button>
+                        </li>
+                        
+                    </ul>
+                </form>
+            </div>
+            
+        </main>
+
+        <footer>
+            <nav id="bottomNav" title="bottomNav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

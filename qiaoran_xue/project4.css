@@ -1,0 +1,404 @@
+/********w************
+    
+    Project 4
+    Name: Qiaoran Xue
+    Date: 2023-04-18
+    Description: A portfolio website - styles. 
+
+*********************/
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@1;100;400&display=swap');
+
+
+body {
+    background-color: #d7d2ce;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+}
+
+#heading {
+    height: 200px;
+}
+
+#heading h1 {
+    color: #333;
+    font-size:4em;
+    font-family: 'Aboreto', cursive;
+    margin: 50px;
+}
+
+#topNav {
+    flex: 6;
+    order: 2;
+    display: flex;
+    margin-bottom: 2px;
+    border-bottom: 1px solid #333;
+    width: 80%;
+}
+
+#topNav ul {
+    list-style: none;
+    padding: 20;
+}
+
+#topNav ul li {
+    padding: 10px;
+}
+
+#topNav ul li a{
+    text-decoration: none;
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 1.5em;
+    color: #826652;
+}
+
+#topNav ul li a:hover {
+    color: #333;
+    font-style: italic;
+    text-shadow: 2px 2px 8px #cfcdcb;
+}
+
+#content {
+    width: 80%;
+    padding-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#intro {
+    text-align: right;
+    font-family: 'Ysabeau', sans-serif;
+    color: #333;
+    padding-bottom: 30px;
+    font-size: 1.5em;
+}
+
+#intro h2 {
+    font-family: 'Aboreto', cursive;
+    font-size: 1.5em;
+}
+
+img {
+    width: 80%;
+    border-radius: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bottomNav {
+	font-size: 10px;
+	text-align: center;
+    padding-top: 20px;
+}
+
+#bottomNav ul {
+    padding: 0;
+}
+
+#bottomNav ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+#bottomNav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 20px;
+    font-size: 2em;
+    font-family: 'Ysabeau', sans-serif;;
+}
+
+#bottomNav ul li a:hover {
+    color: #333;
+    font-style: italic;
+}
+
+.skills {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skillOne, .skillTwo, .skillThree {
+    padding-top: 20px;
+}
+
+.skillOne h2, .skillTwo h2, .skillThree h2 {
+    font-family: 'Aboreto', cursive;
+    color: #333;
+    font-size: 2em;
+}
+
+.skillOne p, .skillTwo p, .skillThree p {
+    font-family: 'Ysabeau', sans-serif;
+    color: #333;
+    font-size: 1.5em;
+}
+
+input, label {
+    display: block;
+}
+
+#myContact h1 {
+    font-family: 'Aboreto', cursive;
+    display: block;
+    padding-left: 60px;
+    padding-top: 20px;
+    color: #333;
+}
+
+#contactInfo ul li{
+    list-style-type: none;
+}
+
+#contactInfo ul {
+    padding-left: 60px;
+}
+
+label {
+    font-family: 'Ysabeau', sans-serif;
+    color: #333;
+    font-size: large;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 1.5em;
+}
+
+#contactInfo ul li p {
+    font-family: 'Ysabeau', sans-serif;
+    color: #333;
+    font-size: large;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    font-size: 1.5em;
+}
+
+button {
+    font-family: 'Ysabeau', sans-serif;
+    color: #333;
+    font-size: 1.5em;
+    width: 100px;
+    height: 30px;
+}
+
+input {
+    width: 386px;
+    height: 30px;
+}
+
+#message {
+    width: 386px;
+}
+
+@media(min-width: 680px) {
+    #topNav ul {
+        display: flex;
+    }
+    
+    #topNav ul li a{
+        text-decoration: none;
+        font-family: 'Ysabeau', sans-serif;
+        font-size: 1.5em;
+        color: #826652;
+        padding-right: 200px;
+    }
+
+    /*home page*/
+    main {
+        padding: 100px 300px 100px 300px;
+        display: block;
+    }
+
+    img {
+        height: 500px;
+        width: 350px;
+        border-radius: 60px;
+        order: 2;
+        flex: 1;
+    }
+
+    #content {
+        padding-right: 50px;
+        width: 80%;
+        align-items: center;
+        display: flex;
+    }
+
+    #content h2 {
+        font-family: 'Aboreto', cursive;
+        font-size: 1.5em;
+        color: #333;
+    }
+
+    #content p {
+        color: #333;
+        font-size: 1em;
+        padding-top: 15px;
+        font-family: 'Ysabeau', sans-serif;
+    }
+
+    #intro {
+        text-align:right;
+        order: 1;
+        padding-right: 100px;
+        flex: 3;
+    }
+
+    #bottomNav {
+	    font-size: 10px;
+	    text-align: center;
+    }
+
+    #bottomNav ul {
+        padding: 0;
+    }
+
+    #bottomNav ul li {
+	    list-style: none;
+	    display: inline-block;
+    }
+
+    #bottomNav ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 20px;
+        font-size: 2em;
+        font-family: 'Ysabeau', sans-serif;
+    }
+
+    #bottomNav ul li a:hover {
+        color: #333;
+        font-style: italic;
+    }
+
+    /*about page*/
+    .skills {
+        display: flex;
+
+    }
+
+    .skillOne {
+        flex: 1;
+        order: 1;
+    }
+
+    .skillTwo {
+        flex: 1;
+        order: 2;
+    }
+
+    .skillThree {
+        flex: 1;
+        order: 3;
+    }
+
+    .skillOne h2, .skillTwo h2, .skillThree h2 {
+        text-align: center;
+        font-family: 'Aboreto', cursive;
+        width: 80%;
+        color: #333;
+        font-size: 2em;
+    }
+
+    .skillOne p, .skillTwo p, .skillThree p {
+        text-align: center;
+        width: 80%;
+        font-family: 'Ysabeau', sans-serif;
+        color: #333;
+        font-size: 1.5em;
+        padding-bottom: 30px;
+    }
+
+    /*contact page*/
+    input, label {
+        display: block;
+    }
+
+    main {
+        display: flex;
+    }
+
+    #myContact {
+        order: 1;
+        flex: 2;
+    }
+
+    #contactForm {
+        order: 2;
+        flex: 3;
+    }
+
+    #myContact h1 {
+        font-family: 'Aboreto', cursive;
+        color: #333;
+        font-size: 2em;
+    }
+
+    #contactInfo ul li{
+        list-style-type: none;
+    }
+
+    label {
+        font-family: 'Ysabeau', sans-serif;
+        color: #333;
+        font-size: 1.5em;
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+
+    #contactInfo ul li p {
+        font-family: 'Ysabeau', sans-serif;
+        color: #333;
+        font-size: 1.5em;
+        margin: 0;
+        padding-bottom: 5px;
+        padding-top: 20px;
+    }
+
+    button {
+        font-family: 'Ysabeau', sans-serif;
+        color: #333;
+        font-size: 1.5em;
+        width: 100px;
+        height: 30px;
+    }
+
+    input {
+        width: 620px;
+        height: 30px;
+    }
+ 
+    #message {
+        width: 620px;
+    }
+}
+
+#name_error.error,
+#phone_error.error,
+#email_error.error,
+#subject_error.error {
+    padding-top: 0;
+    color: #c94545;
+}
+
+/*thank you page*/
+#thankYou {
+    font-family: 'Aboreto', cursive;
+    color: #333;
+    font-size: 1.5em;
+    display: block;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+#thankYou h1 {
+    text-align: center;
+}
+
+
