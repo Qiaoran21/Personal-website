@@ -1,6 +1,5 @@
 /********w************
     
-	Project 4
     Name: Qiaoran Xue
     Date: 2023-04-24
     Description: A portfolio website - contact form validation.
